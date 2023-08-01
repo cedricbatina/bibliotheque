@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernat-configuration PUBLIC 
+"-//Hibernate/Hibernate Configuration DTD 3.0 //EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<session-factory>
+ <property name="hibernate.dialect">org.hibernate.dialect.PostgresSQLDialect
+ </property>
+<property name="hibernate.conection.driver_class">org.postgresql.Driver
+</property>
+<property name="hibernate.connection.url">
+jdbc:postgresql://localhost:5432/catalog
+</property>
+<property name="hibernate.connection.username">admin</property>
+<property name="hibernate.connection.password">catalog</property>
+<property name="dialect">org.hibernate.dialect.PostgresSQLDialect</property>
+<property name="show_sql">true</property>
+<mapping resouce="author.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>
